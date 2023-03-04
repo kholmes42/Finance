@@ -2,7 +2,7 @@ The project largely uses publically available data from the Fama French Library.
 
 ## Style Analysis
 
-A simple way to analyze factor exposure for a manager is using Sharpe Style analysis. In this process, we roll a constrained linear regression over sliding windows to get the approximate style allocations for a return stream.
+A simple way to analyze factor exposure for a manager is using Sharpe Style analysis. In this process, we run a constrained linear regression over sliding windows to get the approximate style allocations for a return stream.
 
 This is done by solving the following optimization problem to minimize tracking error:
 
