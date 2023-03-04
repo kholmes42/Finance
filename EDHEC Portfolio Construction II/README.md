@@ -16,6 +16,6 @@ $$\text{Where w' is the active portfolio weight, b is the benchmark weight, } \S
 
 As can be seen below for decomposition of the the cap-weighted return for the Oil industry, the return has largely been a reflection of beta to the overall stock market, which intuitively makes sense since there is economic linkage between both. We also note that post the 2014-2015 oil price crash, oil companies have had larger exposure to the value factor, largely due to the compression in their P/E as investors shunned the industry.
 
-It is important to use relevant factor definitions or results may be difficult to interpret.
+It is important to use relevant factor definitions or else the results may be difficult to interpret.
 
 ![plot](https://github.com/kholmes42/Finance/blob/main/imgs/styleoil.png)
