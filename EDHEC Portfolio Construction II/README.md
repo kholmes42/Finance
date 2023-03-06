@@ -8,7 +8,7 @@ This is done by solving the following optimization problem to minimize tracking 
 
 $$Min_{w'}  := {w'}^T\Sigma w'$$
 
-$$s.t. w' + b \geq 0  \text{    Long only replication}$$
+$$s.t. w \geq 0  \text{    Long only replication}$$
 
 $${w}^T1 = 1  \text{    Fully invested}$$
 
