@@ -10,9 +10,9 @@ $$Min_{w'}  := {w'}^T\Sigma w'$$
 
 $$s.t. w' + b \geq 0  \text{    Long only replication}$$
 
-$${w'}^T1 = 1  \text{    Fully invested}$$
+$${w}^T1 = 1  \text{    Fully invested}$$
 
-$$\text{Where w' is the active portfolio weight, b is the benchmark weight, } \Sigma \text{ is the covariance matrix.}$$
+$$\text{Where w' is the active portfolio weight (w-b), b is the benchmark weight, } \Sigma \text{ is the covariance matrix.}$$
 
 As can be seen below for decomposition of the the cap-weighted return for the Oil industry, the return has largely been a reflection of beta to the overall stock market, which intuitively makes sense since there is economic linkage between both. We also note that post the 2014-2015 oil price crash, oil companies have had larger exposure to the value factor, largely due to the compression in their P/E as investors shunned the industry.
 
