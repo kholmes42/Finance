@@ -4,6 +4,18 @@ OLS Regression based factor models can be sensitive to leverage points (outliers
 
 ![plot](https://github.com/kholmes42/Finance/blob/main/imgs/factcoef.png)
 
+In order to provide structure to the covariance matrix we can also apply a factor model. This decomposes the asset covariance matrix into:
+
+$$ \Sigma_Z = \beta \Sigma_F \beta^T + \Sigma_{ee} $$
+
+$$\text{Where } \beta \text{ is the asset factor exposures from linear regression (n asset by k factor), } $$
+
+$$ \Sigma_F \text{ is the factor covariance matrix, and } \Sigma_{ee} \text{ is a diagonal matrix of specific risks assumed to be uncorrelated}$$
+
+It also allows the decomposition of portfolio risk into specific risk and factor risk.
+
+
+![plot](https://github.com/kholmes42/Finance/blob/main/imgs/riskbreakdown.png)
 
 ## Graphical Network Visualization of Covariance Matrix
 
