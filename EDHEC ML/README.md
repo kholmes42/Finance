@@ -29,3 +29,17 @@ We can build a graphical representation of the covariance matrix to get an inter
 Using our algorithm we get 10 clusters using returns from 2010-2018. We try to interpret the clusters and provide meaningful names to them. Intuitively, similar industries group together and are more isolated from others. For example, Staples (orange) and Defensives (red) are less connected to other industries because they are less economically sensititve in nature. Additionally, we notice Gold (pink) is very isolated from all other assets as it is often one of the least correlated industries to the broader market. We also note that Services (turqoise) with a large financial representation and Industrials (purple) are highly connected as they are generally more cyclical areas of the market.
 
 ![plot](https://github.com/kholmes42/Finance/blob/main/imgs/graphicalnetwork.png)
+
+
+## Trend Filtering
+
+A problem in conventional investment management is the identification of regimes and non-normality in return distributions. Here we test the impact of a 2-regime world on the output of a portfolio optimizer. The regimes are detected using a L1 regularized trend filtering algorithm on montly US Equity returns. When the output is below 0 this is identified as a "poor" regime and when above 0 identified as a "good" regime. Clearly we see in the histograms that the historical returns in each regime look quite different.
+
+![plot](https://github.com/kholmes42/Finance/blob/main/imgs/filterret.png)
+
+We can then segment these two returns and simulate outcomes before using as inputs into a portfolio optimizer. The takeaway from this rather naive approach is that in a 2-regime world, an investor must actually take on more risk to achieve similar return, as evidenced by the slight shift rightwards we observe in the efficient frontier (from blue to orange).
+
+![plot](https://github.com/kholmes42/Finance/blob/main/imgs/multifrontier.png)
+
+
+
