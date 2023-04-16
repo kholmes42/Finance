@@ -18,3 +18,12 @@ We can pull company filings from the EDGAR (SEC) database for NLP analysis. We w
 The below example uses Exxon Mobil (XOM) for the analysis with 10-K filings from 2013-2022. Generally, we see pretty similar Risk Factor sections, with the only noticeable changes occuring in 2021 and 2022. Upon examination of the documents, this is because the first reference to the COVID pandemic occurs in the 2020 filing (filed in 2021) and a larger emphasis on climate risks in the 2021 filing (filed in 2022). Both are key risks that the company faced, first due to the large economic demand destruction that occured during the pandemic, with XOM being sensitve to this as an energy producer. Second, with the pressure that society is placing on the energy sector to transition to cleaner forms of energy and lower emissions.
 
 ![plot](https://github.com/kholmes42/Finance/blob/main/imgs/10kxom.png)
+
+
+## Hedge Fund 13-F Holdings
+
+We can also pull hedge fund holdings from the EDGAR database. In the below we pull Citadel Advisors holdings for the period ended Dec 31, 2022. The top 10 holdings are well known US equities. The largest holding is exposure to IShares ETFs which has been aggregated to ~1.6%.
+
+![plot](https://github.com/kholmes42/Finance/blob/main/imgs/citadel13f2022.png)
+
+
